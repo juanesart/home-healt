@@ -35,7 +35,7 @@ const Hero = () => {
                                 target='_blank'
                             >
                                 <span className='bg-primary rounded-3xl p-4 text-white text-2xl font-semibold duration-300 hover:bg-hoverPri'>
-                                    ¡Agendate ya!
+                                    ¡Agéndate ya!
                                 </span>
                             </Link>
                         </div>

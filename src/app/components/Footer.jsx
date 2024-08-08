@@ -39,17 +39,6 @@ const Footer = () => {
                                 </p>
                             </Link>
                         </li>
-                        <li className='hover:text-hoverPri duration-300'>
-                            <Link
-                                href='https://www.instagram.com/homehealth.med/'
-                                target='_blank'
-                            >
-                                <p className='flex font-medium items-center gap-1'>
-                                    <AiOutlineFacebook />
-                                    homehealth.med
-                                </p>
-                            </Link>
-                        </li>
                         <li>
                             <p className='flex font-medium items-center gap-1'>
                                 <AiOutlineMail />
