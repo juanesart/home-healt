@@ -26,12 +26,12 @@ const Header = () => {
                         </li>
                         <li className='hover:text-hoverSec duration-300'>
                             <Link href={'#services'}>
-                                servicios
+                                Servicios
                             </Link>
                         </li>
                         <li className='hover:text-hoverSec duration-300'>
                             <Link href={'#profesionales'}>
-                                profesionales
+                                Profesionales
                             </Link>
                         </li>
                     </ul>
