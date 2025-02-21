@@ -3,9 +3,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const ButtonWps = () => {
+    const handleClick = () => {
+        gtag_report_conversion("https://wa.me/573001234567");
+    };
     return (
         <div className='fixed right-0 bottom-0 z-10'>
             <Link
+                onClick={handleClick}
                 href='https://api.whatsapp.com/message/2ZAQWZRITTCCI1'
                 target='_blank'
             >
