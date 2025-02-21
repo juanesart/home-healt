@@ -45,6 +45,29 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        {/* Función para reportar conversión en WhatsApp */}
+        <Script
+          id="whatsapp-conversion"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-16821835763/9UqLCMDQnp4aEPOvo9U-',
+                  'value': 1.0,
+                  'currency': 'COP',
+                  'event_callback': callback
+                });
+                return false;
+              }
+            `,
+          }}
+        />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
